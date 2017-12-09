@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="popp_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_popup_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_popup_out</item>
+    </style>
+</resources>
