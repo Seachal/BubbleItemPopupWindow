@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
         windowWidth = outMetrics.widthPixels;
         windowHeight = outMetrics.heightPixels;
 
+//    public static int getScreenWidth(Context context) {
+//        return context.getResources().getDisplayMetrics().widthPixels;
+//    }
 
         initData1();
 
@@ -177,22 +180,30 @@ public class MainActivity extends AppCompatActivity {
         });
         bubbleView.setAdapter(adapter1);
         rightTopWindow.setContentViewpop(bubbleView);
-        // rightTopWindow.show(view, Gravity.BOTTOM, Gravity.BOTTOM,0);
-        // bubbleView.setBubbleParams(BubbleRelativeLayout.BubbleLegOrientation.TOP,bubbleView.getMeasuredWidth()/2);
         bubbleView.setBubbleParams(BubbleRelativeLayout.BubbleLegOrientation.TOP,
                 rightTopWindow.getMeasuredWidth() - (view.getWidth() / 2));
+
+
         int[] location = new int[2];
         view.getLocationOnScreen(location);
+
+
         Log.i(TAG, "location[0]:" + location[0]);
         Log.i(TAG, "location[1]:" + location[1]);
 
 
         Log.i(TAG, "windowWidth:" + windowWidth);
         Log.i(TAG, "windowHeight:" + windowHeight);
+
+
         // rightTopWindow.showAtLocation(view,Gravity.NO_GRAVITY,location[0]-(bubbleView.getMeasuredWidth()),location[1]+view.getHeight());
         rightTopWindow.showAtLocation(view, Gravity.NO_GRAVITY,
                 windowWidth - rightTopWindow.getMeasuredWidth(), location[1] + view.getHeight());
+
+
         setBacgroundAlpha(rightTopWindow);
+
+
         Log.i(TAG, "location[0]:" + location[0]);
         Log.i(TAG, "view.getWidth():" + view.getWidth());
         Log.i(TAG, "rightTopWindow.getMeasuredWidth():" + rightTopWindow.getMeasuredWidth());

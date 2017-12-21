@@ -23,13 +23,13 @@
             android:text="Bottom" />
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="top|left"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:onClick="leftTop2"
-            android:text="Bottom2" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="leftTop2"
+        android:text="Bottom2" />
 
 
     </LinearLayout>
